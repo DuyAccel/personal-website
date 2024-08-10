@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    container_name: myweb
+    user: "${UID}:${GID}"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app

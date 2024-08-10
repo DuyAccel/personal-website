@@ -1,0 +1,75 @@
+/* Catppuccin Macchiato Theme Colors */
+:root {
+  --surface0: #24273a; /* Background */
+  --surface1: #1e2030; /* Sidebar background */
+  --surface2: #1a1b26; /* Sidebar hover */
+  --text: #cad3f5; /* Main text */
+  --accent: #8aadf4; /* Highlight */
+  --accent-hover: #ed8796; /* Highlight hover */
+}
+
+/* Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Garamond", serif;
+  background-color: var(--surface0);
+  color: var(--text);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--surface1);
+  padding: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--surface2);
+}
+
+/* Active Link */
+.sidebar ul li a.active {
+  background-color: var(--accent);
+  color: var(--surface0);
+}
+
+/* Content */
+.content {
+  margin-left: 15%;
+  padding: 20px;
+  background-color: var(--surface0);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--accent);
+}

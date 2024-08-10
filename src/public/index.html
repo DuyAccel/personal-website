@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Thiết lập mã hóa ký tự cho trang web, sử dụng UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Đảm bảo trang web hiển thị tốt trên các thiết bị di động -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tiêu đề của trang web sẽ hiển thị trên tab trình duyệt -->
+    <title>Duy's Website</title>
+
+    <!-- Liên kết tới file CSS để tạo kiểu cho trang web -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Phần bên trái của trang, chứa mục lục điều hướng -->
+    <div class="sidebar">
+      <h2 style="text-align: center">IT'S DUY</h2>
+      <ul>
+        <!-- Liên kết tới các mục khác nhau của trang web -->
+        <li>
+          <a href="#about" data-file="./about/about.html">About Me</a>
+        </li>
+        <li>
+          <a href="#education" data-file="./edu/edu-main.html">Education</a>
+        </li>
+        <li>
+          <a href="#projects" data-file="./project/prj-main.html">Projects</a>
+        </li>
+        <li>
+          <a href="#resources" data-file="./resource/rs-main.html">Resources</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Phần bên phải của trang, nơi hiển thị nội dung của từng mục -->
+    <div id="content" class="content">
+      <h1>Welcome!</h1>
+      <p>This is where the content for each section will appear.</p>
+    </div>
+
+    <!-- Liên kết tới file JavaScript để thêm tính năng tương tác -->
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

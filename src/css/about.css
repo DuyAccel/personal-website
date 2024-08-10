@@ -1,0 +1,51 @@
+/* about.css */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full screen height */
+  text-align: left;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Space between the introduction and the profile picture */
+  margin-bottom: 70px;
+}
+
+.introduction {
+  max-width: 50%;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Bo tròn ảnh đại diện */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .introduction,
+  .profile-picture {
+    max-width: 100%;
+  }
+
+  .profile-picture img {
+    width: 100px;
+    height: 100px;
+  }
+}

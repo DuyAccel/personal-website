@@ -1,0 +1,22 @@
+/* edu-styles.css */
+
+.navigator {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1e2030;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.navigator a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navigator a:hover,
+.navigator a.active {
+  background-color: #495057;
+}
