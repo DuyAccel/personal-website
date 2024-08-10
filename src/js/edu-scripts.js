@@ -11,14 +11,14 @@ function loadEduContent(file) {
 }
 
 // Automatically load cert.html when edu-main.html is loaded
-loadEduContent("./edu/cert.html");
+loadEduContent("public/edu/cert.html");
 
 // Event listener for navigator clicks
 document.querySelectorAll(".navigator a").forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
     const targetFile = event.target.getAttribute("href").substring(1) + ".html";
-    loadEduContent(`./edu/${targetFile}`);
+    loadEduContent(`public/edu/${targetFile}`);
 
     // Update active link style
     document.querySelectorAll(".navigator a").forEach((navLink) => {

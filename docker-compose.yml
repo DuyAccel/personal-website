@@ -3,6 +3,8 @@ services:
     build: .
     container_name: myweb
     user: "${UID}:${GID}"
+    tty: true
+
     ports:
       - "3000:3000"
     volumes:

@@ -15,7 +15,7 @@ function loadContent(file) {
 function loadEduScript() {
   if (!document.getElementById("edu-scripts")) {
     const script = document.createElement("script");
-    script.src = "../js/edu-scripts.js";
+    script.src = "js/edu-scripts.js";
     script.id = "edu-scripts";
     script.defer = true;
     document.body.appendChild(script);
@@ -48,7 +48,7 @@ document.querySelectorAll(".sidebar ul li a").forEach((link) => {
 
 // Automatically load the content of 'about.html' when the page first loads
 document.addEventListener("DOMContentLoaded", function () {
-  loadContent("../content/main/about.html");
+  loadContent("public/about/about.html");
 
   const aboutLink = document.querySelector('.sidebar ul li a[href="#about"]');
   if (aboutLink) {
